@@ -1,10 +1,11 @@
 import { Elysia } from "elysia";
+import { node } from '@elysiajs/node'
 import { PrismaClient } from "@prisma/client";
 import { getFolderTree } from "@/services/folders";
 
 const prisma = new PrismaClient();
 
-const app = new Elysia();
+const app = new Elysia({ adapter: node() });
 
 app.get("/api/folders", async ({ set }) => {
   try {
