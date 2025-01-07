@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@elysiajs/cors": "^1.2.0",
+    "@elysiajs/node": "^1.2.3",
     "@prisma/client": "^6.1.0",
     "@types/jest": "^29.5.14",
     "elysia": "^1.2.10",
