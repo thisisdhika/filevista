@@ -3,6 +3,7 @@
   "version": "1.0.50",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
+    "build": "rimraf dist && tsc",
     "test": "jest --config jest.config.ts"
   },
   "dependencies": {
